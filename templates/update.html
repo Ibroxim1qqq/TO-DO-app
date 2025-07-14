@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Vazifani tahrirlash</title>
+</head>
+<body>
+  <h2>✏️ Vazifani o‘zgartirish</h2>
+  <form method="POST">
+    {% csrf_token %}
+    <input type="text" name="title" value="{{ task.title }}" required>
+    <button type="submit">Saqlash</button>
+  </form>
+  <a href="/">⬅️ Orqaga</a>
+</body>
+</html>
